@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Theme */
+:root {
+  --bg-color--: #111;
+  --heading-text--: #fff;
+  --theme-color--: #ff4500;
+  --bg-quote-color--: #ffe4d7;
+  --box-shadow--: 0px 0px 20px var(--theme-color--);
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color--);
+}
+
+.Quote-Container {
+  background-color: var(--bg-quote-color--);
+  min-width: 80vw;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: var(--box-shadow--);
+}
+
+.Quote-Container h1 {
+  font-size: 3em;
+  line-height: 1.2;
+  letter-spacing: 0.125em;
+  margin-block: 2vh;
+}
+
+.Quote-Container blockquote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  min-height: 30vh;
+}
+
+.Quote-Container span {
+  font-size: 1.8em;
+  letter-spacing: 0.135em;
+  color: var(--theme-color--);
+}
+
+.Quote-Container .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 3vh;
+  padding: 20px;
+}
+
+.Quote-Container .buttons button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: var(--bg-color--);
+  color: var(--theme-color--);
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
+}
+.Quote-Container .buttons button:hover {
+  box-shadow: var(--box-shadow--);
+}
